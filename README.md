@@ -3,13 +3,13 @@
 <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
     var gitment = new Gitment({
-        id: '页面 ID', // 可选。默认为 location.href
+        id: '页面 ID'
         owner: '你的 GitHub ID',
         repo: '存储评论的 repo',
         oauth: {
-            client_id: '你的 client ID',
-            client_secret: '你的 client secret',
+            client_id: '577e221d4d0c72994afe',
+            client_secret: 'dedc94f3f91d925cbea448c9083a7ba60f577988',
         },
      })
-    gitment.render('container’); //container为你要显示评论的id
+    gitment.render('container’); 
 </script>
