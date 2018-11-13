@@ -13,6 +13,19 @@
 		<li><a href="#xxx">js</a></li>
 	 	</ul>
 	</div>
-	
+	<div id="container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+        id: 'location.href',
+        owner: '#34310590',
+        repo: '存储评论的 repo',
+        oauth: {
+            client_id: '577e221d4d0c72994afe',
+            client_secret: 'dedc94f3f91d925cbea448c9083a7ba60f577988',
+        },
+     })
+    gitment.render('container’);</script>
 </body>
 </html>
