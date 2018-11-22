@@ -1,12 +1,30 @@
 body{
 	background-color: #f0fae8;
 }
+button{
+	background-color: #91bd6e;
+	color: white;
+	border-color: #9fca7c;
+	margin: 100px 60px 60px 50px;
+	font-size: 86px;
+	border-width: 10px;
+	border-radius: 25px;
+}
+a{
+	text-decoration:none;
+	color: white;
+}
+#head{
+	display: inline-flex;
+	display: -webkit-inline-flex;
+}
 ul{
 	list-style-type: none;
 	background-color: #b6d5af;
 }
 ul li{
 	font-size: 24px;
+	display: inline-flex;
 }
 ul li a{
 	text-decoration: none;
