@@ -1,0 +1,33 @@
+body{
+	background-color: #f0fae8;
+}
+.content #first p,#second p,#third p,#fourth p{
+	color: #9ec0a1;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 30px;
+}
+.content{
+	text-align: center;
+	color: #929899;
+	font-size: 18px;
+
+}
+.center{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+}
+button{
+	background-color: #91bd6e;
+	color: white;
+	border-color: #9fca7c;
+	margin: 100px 60px 60px 50px;
+	font-size: 86px;
+	border-width: 10px;
+	border-radius: 25px;
+}
+a{
+	text-decoration:none;
+	color: white;
+}

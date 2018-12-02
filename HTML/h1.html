@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML课程</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="h1.css"/>
+	<script type="text/javascript" src="h1.js">
+function newLocation()
+{
+window.location="/index.html"
+}
+</script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+</head>
+<body>
+		<div class="nav">   <!--导航栏-->
+		<ul>
+			<li><a href="#">软件下载</a></li>
+			<li><a href="#">线上咨询</a></li>
+			<li><a href="#">联系我们</a></li>
+		</ul>
+		</div>
+		<div class="point">
+		<br><br>
+				按照HTML学习要求，你需要先进行一个小测试：<br>
+				请点击小怪兽进行学习偏好测试，<br>
+				我们将提供最适合你的学习方法。
+		<br><br>
+		<a href="#"><img src="../images/monster.png" style="margin:10px 0px 0px -90px;"></a>
+		</div>
+		<div class="point">
+		<div><br><br><br><br>
+			HTML的基本框架如右：<br>
+			可以看到这里面有很多相似的"< >"尖括号
+		</div>
+		<iframe src="https://code.sololearn.com/#html" width="500" height="570"></iframe>
+		</div>
+	<div id="container"></div>
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+  	id: '页面 ID', // 可选。默认为 location.href
+  	owner: '34310590',
+  	repo: 'luo.github.io',
+  	oauth: {
+    client_id: '5532d7a4d19a8ee03435',
+    client_secret: 'af14d130da71cb8ff106194cab46616792cdc15c',
+  	},
+	})
+	gitment.render('container')
+	</script>
+</body>
+</html>
