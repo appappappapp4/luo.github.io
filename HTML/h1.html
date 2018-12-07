@@ -13,6 +13,7 @@ window.location="/index.html"
 </script>
 	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 	<script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	<script src="jquery.js"></script>
 </head>
 <body>
 		<div class="nav">   <!--导航栏-->
@@ -23,9 +24,25 @@ window.location="/index.html"
 		</ul>
 		</div><br><br><br><br>
 		<div class="point">
-		<div><br><br><br><br>
-			HTML的基本框架如右：<br>
+		<div><br><br>
+		<div class="point"><!--内容-->
+		<div><br><br>
+		<input type="text" name="first" id="input">
+		<button id="button" onclick="open">百度一下</button>
+	<script type="text/javascript">
+		var value=document.getElementById('input')
+		$("button").click(function()
+		{window.open("https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd="+value.value)});
+	</script><br><br>
+			HTML的<span>基本框架</span>如右：<br>
 			可以看到这里面有很多相似的"< >"尖括号
+			<br><br><span>红色的标签</span>是组成html的基本
+			<br><br><br>
+			现在试着在<span>第7行</span>两个body标签之间输入任意内容
+			<br>然后按下右下角的<span>run</span>按钮
+			<br>看看结果如何呢？
+			<br><br><br><br><br><br><br><br><br><br><br><br><br>
+			记得在下方评论区登陆GitHub账号并留下你本小节的收获领取积分哦！
 		</div>
 		<iframe src="https://code.sololearn.com/#html" width="500" height="570"></iframe>
 		</div>
@@ -44,5 +61,25 @@ window.location="/index.html"
 	})
 	gitment.render('container')
 	</script>
+			<!--领取积分-->
+	<div id="score"></div>
+	<script type="text/javascript">
+	var score=0
+    $(window).scroll(function(){
+        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+        	score = score+5
+        	document.getElementById('score').innerHTML="我的积分："+score
+        }
+    });
+</script>
+	<!--下一节-->
+	<div class="next">
+		<div></div>
+		<a href="h2.html"><p>点击进入下一节</p></a>
+	</div>
+	<div class="next">
+		<div></div>
+		<a href="h2.html"><img src="../images/jiantou.png"></a>
+	</div><br><br>
 </body>
 </html>
