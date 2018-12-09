@@ -11,7 +11,6 @@ body{
 	text-align: center;
 	color: #929899;
 	font-size: 18px;
-
 }
 .center{
 	display: flex;
@@ -23,7 +22,7 @@ button{
 	color: white;
 	border-color: #9fca7c;
 	margin: 100px 60px 60px 50px;
-	font-size: 86px;
+	font-size: 80px;
 	border-width: 10px;
 	border-radius: 25px;
 }
