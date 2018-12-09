@@ -9,18 +9,15 @@
 	<script type="text/javascript" src="h1.js"></script>
 	<script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 	<script src="jquery.js"></script>
-	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-	<script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-	<script src="jquery.js"></script>
 </head>
 <body>
 		<div class="nav">   <!--导航栏-->
 		<ul>
-			<li><a href="#">软件下载</a></li>
-			<li><a href="#">线上咨询</a></li>
-			<li><a href="#">联系我们</a></li>
+			<li><a href="downloads.html">软件下载</a></li>
+			<li><a href="contact.html">线上咨询</a></li>
+			<li><a href="us.html">联系我们</a></li>
 		</ul>
-		</div><br><br><br><br>
+		</div><br><br>
 		<div class="point">
 		<div><br><br>
 		<div class="point"><!--内容-->
@@ -31,19 +28,29 @@
 		var value=document.getElementById('input')
 		$("button").click(function()
 		{window.open("https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd="+value.value)});
-	</script><br><br>
+	</script><br>HTML也称<span>超文本标记语言</span><br>
 			HTML的<span>基本框架</span>如右：<br>
 			可以看到这里面有很多相似的"< >"尖括号
 			<br><br><span>红色的标签</span>是组成html的基本
-			<br><br><br>
+			<br>每种标签都由<span>开始标签< ></span>与<span>结束标签< / > </span>组成
+			<br><br>
 			现在试着在<span>第7行</span>两个body标签之间输入任意内容
 			<br>然后按下右下角的<span>run</span>按钮
 			<br>看看结果如何呢？
-			<br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<br><br><br>
+			<span style="color: green;">显示的内容在开始标签与结束标签之间</span>
+			<br><br><br><br><br><br><br><br><br><br>
 			记得在下方评论区登陆GitHub账号并留下你本小节的收获领取积分哦！
 		</div>
 		<iframe src="https://code.sololearn.com/#html" width="500" height="570"></iframe>
 		</div>
+		<div class="next">
+		<a href="h2.html"><p>点击进入下一节</p></a>
+	</div>
+	<div class="next">
+		<div></div>
+		<a href="h2.html"><img src="../images/jiantou.png"></a>
+	</div><br>
 	<div id="container"></div>
 	<script>
 	var gitment = new Gitment({
@@ -58,7 +65,6 @@
 	gitment.render('container')
 	</script>
 			<!--领取积分-->
-	<div id="score"></div>
 	<script type="text/javascript">
 	var score=0
     $(window).scroll(function(){
@@ -68,14 +74,7 @@
         }
     });
 </script>
-	<!--下一节-->
-	<div class="next">
-		<div></div>
-		<a href="h2.html"><p>点击进入下一节</p></a>
-	</div>
-	<div class="next">
-		<div></div>
-		<a href="h2.html"><img src="../images/jiantou.png"></a>
-	</div><br><br>
+
+	<div id="score"></div>
 </body>
 </html>
