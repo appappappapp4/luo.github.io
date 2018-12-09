@@ -5,10 +5,10 @@ button{
 	background-color: #91bd6e;
 	color: white;
 	border-color: #9fca7c;
-	margin: 100px 60px 60px 50px;
-	font-size: 86px;
+	margin: 70px 30px 60px 20px;
+	font-size: 70px;
 	border-width: 10px;
-	border-radius: 25px;
+	border-radius: 15px;
 }
 a{
 	text-decoration:none;
