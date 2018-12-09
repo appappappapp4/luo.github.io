@@ -48,10 +48,23 @@ span{
 }
 .next{
 	display: flex;
-	display: -webkit-flex;
 	flex-direction: row-reverse;
 }
 a{
 	text-decoration:none;
 	color: red;
+}
+.center{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+}
+button{
+	background-color: #91bd6e;
+	color: white;
+	border-color: #9fca7c;
+	margin: 10px 20px 20px 10px;
+	font-size: 36px;
+	border-width: 5px;
+	border-radius: 2px;
 }
