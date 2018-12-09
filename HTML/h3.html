@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML课程-初识</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="h1.css"/>
+	<script type="text/javascript" src="h1.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	<script src="jquery.js"></script>
+	<script type="text/javascript" src="all.js"></script>
+</head>
+<body>
+		<div class="nav">   <!--帮助栏-->
+		<ul>
+			<li><a href="downloads.html">软件下载</a></li>
+			<li><a href="contact.html">线上咨询</a></li>
+			<li><a href="us.html">联系我们</a></li>
+		</ul>
+		</div>
+		<br><br>
+		<div class="point"><!--内容-->
+		<div><br><br>
+		<input type="text" name="first" id="input">
+		<button id="button" onclick="open">百度一下</button>
+	<script type="text/javascript">
+		var value=document.getElementById('input')
+		$("button").click(function()
+		{window.open("https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd="+value.value)});
+	</script>
+
+	<br><br>
+			现在请在你的 HTML 文档的<span>body</span>中输入：
+			<code><pre>
+
+			&lt;h1&gt;我的第一个标题&lt;/h1&gt;
+			&lt;p&gt;我的第一个段落。&lt;/p&gt;
+
+
+			</pre>
+			</code>
+			<br><br>
+			看看出现了什么？
+			<br><br><br>
+        	在<span>&lt;h1&gt;</span>标签里出现了一段黑色粗体的文字<br>
+        	通常作为 HTML 文档里的<span>标题</span><br>
+        	<br>在<span>&lt;p&gt;</span>标签里出现了一段黑色的普通文字
+		<br>通常作为 HTML 文档里的<span>段落</span>
+		<br><br>至于为什么h1与p会有 <em>空隙</em> 并且 <em>竖直排列</em>
+		<br>我们将会在后面的章节提到
+		</div>
+		<iframe src="https://code.sololearn.com/#html" width="500" height="570"></iframe>
+		</div><br><br>
+		
+	<!--示例代码-->
+		<div class="center">
+		<span style="color: green;">将下列两个示例代码复制到编辑器里，看看出现什么效果吧</span><br></div>
+		<div class="center">
+		<pre>
+		&lt;html&gt;
+		&lt;head&gt;
+			&lt;title&gt;
+				我的第一个网页
+			&lt;/title&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+			&lt;h1&gt;h1对应的标题&lt;/h1&gt;
+			&lt;h2&gt;h2对应的标题&lt;/h2&gt;
+			&lt;h3&gt;h3对应的标题&lt;/h3&gt;
+			&lt;h4&gt;h4对应的标题&lt;/h4&gt;
+			&lt;h5&gt;h5对应的标题&lt;/h5&gt;
+			&lt;h6&gt;h6对应的标题&lt;/h6&gt;
+		&lt;/body&gt;
+		&lt;/html&gt;
+		</pre>
+		</div><br><br>
+		<div class="center">
+			<pre>
+		&lt;html&gt;
+		&lt;head&gt;
+			&lt;title&gt;
+				我的第一个网页
+			&lt;/title&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+			&lt;p1&gt;p1对应的段落&lt;/p1&gt;
+			&lt;p2&gt;p2对应的段落&lt;/p2&gt;
+		&lt;/body&gt;
+		&lt;/html&gt;
+		</pre>
+		</div>
+
+	<!--进入测试-->
+		<div class="next">
+		<div></div>
+		<a href="h3-test.html"><p>点击进入测试</p></a>
+		</div>
+		<div class="next">
+		<div></div>
+		<a href="h3-test.html"><img src="../images/jiantou.png"></a>
+		</div><br>
+
+		
+
+	<div id="container"></div><!--评论区-->
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+  	id: '<%= page.title %>', // 可选。默认为 location.href
+  	owner: 'appappappapp4',
+  	repo: 'comment',
+  	oauth: {
+    client_id: '5532d7a4d19a8ee03435',
+    client_secret: 'af14d130da71cb8ff106194cab46616792cdc15c',
+  	},
+	})
+	gitment.render('container')
+	</script>
+	<script type="text/javascript">
+		var value=document.getElementById('input')
+		$("button").click(function()
+		{window.open("https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd="+value.value)});
+	</script>
+	<!--评论滑至底端领取积分-->
+	<div id="score"></div>
+
+</body>
+</html>
