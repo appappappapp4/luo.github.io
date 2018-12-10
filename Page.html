@@ -5,13 +5,26 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" type="text/css" href="Page.css"/>
 	<script type="text/javascript" src="Page.js"></script>
+	<script src="HTML/jquery.js"></script>
 </head>
 <body>
 	<div id="head">
 	<a href="#"><img src="images/monster.gif" style="margin:0;"></a>
-
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#img").click(function(){
+				$("#div1").toggle();
+			});
+		})
+	</script>
 	<button style="height: 150px;width:330px;"><a href="HTML/h0.html">HTML</a></button>
 	<button style="height: 150px;width:330px;"><a href="CSS/css0.html">CSS</a></button>
+	</div>
+	<div id="div1" style="display: none;color: green;position: absolute;left: 280px;top: 300px;">
+		<a href="https://www.wjx.cn/jq/32234528.aspx"><img src="images/wenjuan.png"></a>
+		<a href="https://www.wjx.cn/jq/32234158.aspx"><img src="images/wenjuan.png"></a>
+		<a href="https://ks.wjx.top/jq/32228647.aspx"><img src="images/wenjuan.png"></a>
+		
 	</div>
 	<div class="navfirst">
 		<ul>
