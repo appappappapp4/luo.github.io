@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML课程-认识标签-1</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="h4.css"/>
+	<script type="text/javascript" src="h1.js"></script>
+	<script type="text/javascript" src="h4.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	<script src="jquery.js"></script>
+	<script type="text/javascript" src="all.js"></script>
+</head>
+<body>
+		<div class="nav">   <!--帮助栏-->
+		<ul>
+			<li><a href="downloads.html">软件下载</a></li>
+			<li><a href="contact.html">线上咨询</a></li>
+			<li><a href="us.html">联系我们</a></li>
+		</ul>
+		</div>
+		<br>
+	<div class="point">
+		<br><br><br><br>
+		<div class="select">
+			<br>
+			<br><br><br><br><br><br>
+			<a onclick="OpenDiv1();" id="open" style="cursor:pointer"> &nbsp;HTML元素 &nbsp;</a><br><br>
+			<a onclick="OpenDiv2();" id="open" style="cursor:pointer"> &nbsp;HTML链接 &nbsp;</a><br><br>
+			<a onclick="OpenDiv3();" id="open" style="cursor:pointer"> &nbsp;HTML图像 &nbsp;</a><br><br>
+			<a onclick="OpenDiv4();" id="open" style="cursor:pointer"> &nbsp;HTML列表 &nbsp;</a><br><br>
+			<a onclick="OpenDiv5();" id="open" style="cursor:pointer"> &nbsp;HTML表格 &nbsp;</a><br><br>
+			<a onclick="OpenDiv6();" id="open" style="cursor:pointer"> &nbsp;HTML注释 &nbsp;</a><br><br>
+		</ul>
+		</div>&nbsp;&nbsp;
+		<div style="display: flex;display: -webkit-flex;flex-direction: column;">
+		<div id="div1" style="display: none;color: green;">
+			<img src="../images/guanbi.png" onclick="CloseDiv1();">
+			<div style="text-align: center;">HTML 文档是由 <span style="color: black;font-weight: bold;">HTML 元素 </span>定义的<br>
+			大多数 HTML 元素可以嵌套（包含其他 HTML 元素）<br>
+			HTML 文档由嵌套的 HTML 元素构成<br>
+			<img src="../images/yuansu.png"></div>
+			
+		</div>
+		<div id="div2" style="display: none;color: green;">
+			<img src="../images/guanbi.png" onclick="CloseDiv2();">
+			<div style="text-align: center;"><span style="color: black;font-weight: bold;">HTML 超链接</span>可以是一组词，一句话，也可以是一幅图像，<br>
+			你可以点击这些内容来跳转到新的文档或者当前文档中的某个位置。<br>
+			当你把鼠标指针移动到网页中的某个链接上时，箭头会变为一只小手。<br>
+			<br>我们通常使用&lt;a&gt;标签来定义超链接。<br>
+			<span>&lt;a&gt;有两种用法：</span><br>
+			一种是指向其他文档<span>&lt;a href="要指向的文档"&gt; &lt;/a&gt;</span><br>
+			一种是指向本文档中的自己（类似于书签）<br>
+			<span>&lt;a href="#要指向的链接的代号"&gt; &lt;/a&gt;</span><br>
+			href是Hypertext Reference的缩写，意思是指定超链接目标的URL<br>
+			如何给自己起一个<span>代号</span>呢？<span>&lt;a name=""&gt; &lt;/a&gt;</span><br>
+			<br>
+			<img src="../images/lianjie.png"></div>
+			<div class="content">
+			<p>亲自试试看吧!</p><br>
+			<pre>
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt;
+				我的第一个网页
+			&lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+				&lt;a href="链接URL" target="_blank"&gt;你要套的元素&lt;/a&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+			</pre>
+			</div>
+		</div>
+		<div id="div3" style="display: none;color: green;">
+			<img src="../images/guanbi.png" onclick="CloseDiv3();">
+			<div style="text-align: center;">那么HTML 如何插入<span style="color: black;font-weight: bold;">图像</span>呢？也是使用标签：<br>
+			<span>&lt;img src="图片的URL(即图片地址)"&gt;</span>
+			src是source的缩写，指源文件。<br>
+			自己试试看吧！<br>
+			<img src="../images/tupian.png"></div><br>
+			<div class="content">
+			亲自试试看吧!<br>
+			<pre>
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt;
+				我的第一个网页
+			&lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+				&lt;img src="图像URL" alt="对图像的说明"&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+			</pre>
+			</div>
+			</div>
+		<div id="div4" style="display: none;color: green;">
+			<img src="../images/guanbi.png" onclick="CloseDiv4();">
+			<div>HTML 列表
+			</div>
+		</div>
+		<div id="div5" style="display: none;color: green;">
+			<img src="../images/guanbi.png" onclick="CloseDiv5();">
+			TEXT
+		</div>
+		<div id="div6" style="display: none;color: green;">
+			<img src="../images/guanbi.png" onclick="CloseDiv6();">
+			TEXT
+		</div>
+	</div>
+		<br><br>&nbsp;&nbsp;
+		<div>
+		<input type="text" name="first" id="input">
+		<button id="button" onclick="open">百度一下</button><br>
+		<p style="margin: 0;color: grey;">(上手练习一下有助于记忆噢!)</p>
+		<script type="text/javascript">
+		var value=document.getElementById('input')
+		$("button").click(function()
+		{window.open("https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd="+value.value)});
+		</script>
+		<iframe src="https://code.sololearn.com/#html" width="500" height="570"></iframe>
+
+		</div>
+	</div>
+			<!--下一节-->
+	<div class="next">
+		<div></div>
+		<a href="h4-test.html"><p>点击进入测试</p></a>
+	</div>
+	<div class="next">
+		<div></div>
+		<a href="h4-test.html"><img src="../images/jiantou.png"></a>
+	</div><br>
+	<div id="container"></div><!--评论区-->
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+  	id: '<%= page.title %>', // 可选。默认为 location.href
+  	owner: 'appappappapp4',
+  	repo: 'comment',
+  	oauth: {
+    client_id: '5532d7a4d19a8ee03435',
+    client_secret: 'af14d130da71cb8ff106194cab46616792cdc15c',
+  	},
+	})
+	gitment.render('container')
+	</script>
+	<script type="text/javascript">
+		var value=document.getElementById('input')
+		$("button").click(function()
+		{window.open("https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd="+value.value)});
+	</script>
+	<!--领取积分-->
+	<div id="score"></div>
+</body>
+</html>
