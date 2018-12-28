@@ -26,3 +26,8 @@ body{
 	color: black;
 	font-size: 18px;
 }
+.center{
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+}
