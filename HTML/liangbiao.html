@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>量表检测</title>
+	<link rel="stylesheet" type="text/css" href="downloads.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script src="jquery.js"></script>
+</head>
+<body>
+	<div class="content">
+		<br><br><br>
+		学完HTML与CSS你了解<span style="color: red;">最佳学习方法</span>吗：<br>
+		来做几个小测试检验一下吧<br>都要做一下哟～<br>
+		<br><br><span style="color: grey;">点我点我！</span><br>
+		<img src="../images/monster.gif" style="margin:0;" id="img">
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#img").click(function(){
+				$("#liangbiao").toggle();
+			});
+		})
+	</script>
+	<div id="liangbiao" style="display: none;color: green;">
+		<a href="https://www.wjx.cn/jq/32234528.aspx"><img src="../images/wenjuan.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="https://www.wjx.cn/jq/32234158.aspx"><img src="../images/wenjuan.png"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="https://ks.wjx.top/jq/32228647.aspx"><img src="../images/wenjuan.png"></a><br>
+		学习偏好调查量表 &nbsp;自主学习调查量表 &nbsp;学习储备调查量表
+		
+	</div>
+	</div>
+</body>
+</html>

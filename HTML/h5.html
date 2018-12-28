@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML课程-认识标签-2</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="h4.css"/>
+	<script type="text/javascript" src="h1.js"></script>
+	<script type="text/javascript" src="h4.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	<script src="jquery.js"></script>
+	<script type="text/javascript" src="all.js"></script>
+</head>
+<body>
+		<div class="nav">   <!--帮助栏-->
+		<ul>
+			<li><a href="downloads.html">软件下载</a></li>
+			<li><a href="contact.html">线上咨询</a></li>
+			<li><a href="us.html">联系我们</a></li>
+		</ul>
+		</div>
+		<br>
+	<div class="point">
+		<br><br><br><br>
+		<div class="select">
+			<br>
+			<br><br><br><br><br><br>
+			<a onclick="OpenDiv1();" id="open" style="cursor:pointer"> &nbsp;HTML盒子&nbsp;</a><br><br>
+			<a onclick="OpenDiv2();" id="open" style="cursor:pointer"> &nbsp;&nbsp;内联框架&nbsp;&nbsp;</a><br><br>
+			<a onclick="OpenDiv3();" id="open" style="cursor:pointer"> &nbsp;HTML表单&nbsp;</a><br><br>
+			<a onclick="OpenDiv4();" id="open" style="cursor:pointer"> &nbsp;HTML音频&nbsp;</a><br><br>
+			<a onclick="OpenDiv5();" id="open" style="cursor:pointer"> &nbsp;HTML视频&nbsp;</a><br><br>
+			<br>
+		</ul>
+		</div>&nbsp;&nbsp;
+		<div style="display: flex;display: -webkit-flex;flex-direction: column;">
+		<div id="div1" style="display: none;color: green;">
+			<img src="../images/guanbi.png" onclick="CloseDiv1();">
+			<div class="content"><span style="color: black;font-weight: bold;">HTML盒子</span>的标签表示为&lt;div&gt;&lt;/div&gt;
+				<br><span>div盒子是最经典的块级元素</span><br>
+				它可用于组合HTML元素，本身没有特定的含义<br>
+				<br><br><br><span style="color: black;">事实上，大多数HTML元素都是块状的
+				<br>例如前面提到的&lt;p&gt;、&lt;img&gt;、&lt;table&gt;&lt;ul&gt;</span>
+				<br><br>你可以点击鼠标右键-检查<br>
+				<img src="../images/jiancha.png">
+				<br>你会看到大多数元素都是块状的
+			</div>
+			
+		</div>
+		<div id="div2" style="display: none;color: green;">
+			<img src="../images/guanbi.png" onclick="CloseDiv2();">
+			<div class="content"><span style="color: black;font-weight: bold;">Iframe</span><br>
+				iframe 用于在网页内显示网页<br>
+				看看下面这个例子：<br>
+				<iframe src="http://cn.bing.com" width="300" height="200" frameborder="0"></iframe><br>滑动一下<br>可以看到这个块里面显示了bing搜索首页<br>快去自己试试看吧！
+			</div>
+		</div>
+		<div id="div3" style="display: none;color: green;">
+			<img src="../images/guanbi.png" onclick="CloseDiv3();">
+			<div class="content">
+				<span style="color: black;font-weight: bold;">HTML表单&lt;form&gt;</span>有以下几种常见元素：<br><br>
+				&lt;input&gt;、&lt;select&gt;、&lt;button&gt;<br>
+			<br>
+			<br>
+			<br>
+			<span style="color: black;">亲自试试看吧!</span><br></div>
+<pre>
+&lt;form&gt;
+&lt;input type="text" value="输入文本"&gt;&lt;br&gt;
+&lt;input type="submit" value="提交"&gt;
+&lt;/form&gt;
+</pre><br>
+<pre>
+&lt;form&gt;
+&lt;input type="radio"  name="sex" value="男" checked&gt;男性
+&lt;input type="radio"  name="sex" value="女"&gt;女性
+&lt;/form&gt;
+</pre><br>
+<pre>
+&lt;button type="button" onclick="alert('弹出警告框!')"&gt;点击&lt;/button&gt;
+</pre>
+				<div class="content">
+					<span style="color: black;">运行完上面三个例子是否有所领悟呢？<br>
+					接下来我们来学习这几个标签的含义吧</span>
+				</div>		
+			</div>
+		<div id="div4" style="display: none;color: green;">
+			<img src="../images/guanbi.png" onclick="CloseDiv4();">
+			<div class="content"><span style="color: black;">HTML 列表</span><br>
+				<span style="font-size: 18px;font-weight: bold;color: grey;">有序列表 和 无序列表</span><br>
+		•无序列表是一个项目的列表，此列项目使用粗体圆点进行标记。<br>
+		无序列表始于&lt;ul&gt;标签。每个列表项始于&lt;li&gt;。<br>
+		<pre>
+&lt;ul&gt;
+	&lt;li&gt;Coffee
+	&lt;li&gt;Milk
+&lt;/ul&gt;</pre>
+<img src="../images/wuxu.png"><br>
+		•有序列表同样也是一列项目，列表项目使用数字进行标记。<br>
+		有序列表始于&lt;ol&gt;标签。每个列表项也是始于&lt;li&gt;标签。<br>
+		<pre>
+&lt;ol&gt;
+	&lt;li&gt;Coffee
+	&lt;li&gt;Milk
+&lt;/ol&gt;</pre>
+<img src="../images/youxu.png"><br>
+<br><br><br>快自己试试看吧！
+
+			</div>
+		</div>
+
+		<div id="div5" style="display: none;color: green;">
+		<img src="../images/guanbi.png" onclick="CloseDiv5();">
+			<div class="content"><span style="color: black;">HTML 表格</span>
+			由&lt;table&gt;标签来定义。
+			<br>每个表格均有若干行（由&lt;tr&gt;标签定义），
+			<br>而每行被分割为若干单元格（由&lt;td&gt;标签定义）。
+			<br>数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。<br>
+			<pre>
+&lt;table&gt;
+	&lt;tr&gt;
+	&lt;td&gt;内容1&lt;/td&gt;
+	&lt;td&gt;内容2&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+	&lt;td&gt;内容3&lt;/td&gt;
+	&lt;td&gt;内容4&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;</pre>
+<img src="../images/biaoge.png"><br>
+<br><br><br>亲自试试看吧！
+			</div>
+		</div>
+	</div>
+		<br><br>&nbsp;&nbsp;
+		<div>
+		<input type="text" name="first" id="input">
+		<button id="button" onclick="open">谷歌搜索</button><br>
+		<p style="margin: 0;color: grey;">(上手练习一下有助于记忆噢!)</p>
+		<script type="text/javascript">
+		var value=document.getElementById('input')
+		$("button").click(function()
+		{window.open("https://www.google.com/search?newwindow=1&safe=strict&hl=zh_CN&source=hp&ei=HpIlXLf8DoL-8QWlu7aYCw&q="+value.value+"&btnK=Google+搜索&oq="+value.value)});
+		</script>
+		<iframe src="https://code.sololearn.com/#html" width="500" height="570"></iframe>
+
+		</div>
+	</div>
+			<!--下一节-->
+	<div class="next">
+		<div></div>
+		<a href="h5-test.html"><p>点击进入测试</p></a>
+	</div>
+	<div class="next">
+		<div></div>
+		<a href="h5-test.html"><img src="../images/jiantou.png"></a>
+	</div><br>
+	<div id="container"></div><!--评论区-->
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+  	id: '<%= page.title %>', // 可选。默认为 location.href
+  	owner: 'appappappapp4',
+  	repo: 'comment',
+  	oauth: {
+    client_id: '5532d7a4d19a8ee03435',
+    client_secret: 'af14d130da71cb8ff106194cab46616792cdc15c',
+  	},
+	})
+	gitment.render('container')
+	</script>
+	<script type="text/javascript">
+		var value=document.getElementById('input')
+		$("button").click(function()
+		{window.open("https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd="+value.value)});
+	</script>
+	<!--领取积分-->
+	<div id="score"></div>
+</body>
+</html>
