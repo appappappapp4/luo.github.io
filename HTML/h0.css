@@ -1,11 +1,25 @@
 body{
 	background-color: #f0fae8;
 }
-.content #first p,#second p,#third p,#fourth p{
-	color: #9ec0a1;
-	text-align: center;
-	font-weight: bolder;
+.nav ul{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	background-color: #b6d5af;
+	height: 40px;
+	text-align:center;
+}
+.nav ul li{
+	list-style-type: none;
+	color: white;
 	font-size: 30px;
+	margin-left: 100px;
+	width:30%;
+	display: inline;
+	padding-top: 110px;
+}
+.nav ul li a{
+	text-decoration:none;
+	color: white;
 }
 .content{
 	text-align: center;
@@ -22,11 +36,14 @@ button{
 	color: white;
 	border-color: #9fca7c;
 	margin: 100px 60px 60px 50px;
-	font-size: 80px;
-	border-width: 10px;
-	border-radius: 25px;
+	font-size: 48px;
+	border-width: 5px;
+	border-radius: 15px;
 }
 a{
 	text-decoration:none;
 	color: white;
+}
+span{
+	color: red;
 }
