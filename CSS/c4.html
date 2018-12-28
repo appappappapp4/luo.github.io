@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS课程-属性认识1</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../HTML/h1.css"/>
+	<script type="text/javascript" src="h1.js"></script>
+	<script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+	<script src="../HTML/jquery.js"></script>
+	<script type="text/javascript" src="all.js"></script>
+</head>
+<body>
+		<div class="nav">   <!--帮助栏-->
+		<ul>
+			<li><a href="downloads.html">软件下载</a></li>
+			<li><a href="contact.html">线上咨询</a></li>
+			<li><a href="us.html">联系我们</a></li>
+		</ul>
+		</div>
+		<br><br><!--内容-->
+		<div class="center">
+		<input type="text" name="first" id="input">
+		<button id="button" onclick="open">谷歌搜索</button>
+	<script type="text/javascript">
+		var value=document.getElementById('input')
+		$("button").click(function()
+		{window.open("https://www.google.com/search?newwindow=1&safe=strict&hl=zh_CN&source=hp&ei=HpIlXLf8DoL-8QWlu7aYCw&q="+value.value+"&btnK=Google+搜索&oq="+value.value)});
+	</script></div>
+	<br><br>
+
+	<div class="center">
+		现在大家基本上知道CSS怎么使用了<br>
+		那么我们就需要思考这个问题：<br><br><br>
+		在大型网站里那么多元素，如何区分得为它们加上样式呢？
+	</div>
+<br><br>
+<div class="center">		
+<div style="text-align: center;">
+	1.<span style="color: green;">ID选择器</span><br>
+	为元素起一个专属名字，从此与众不同！
+	<img src="../images/id.png"><br><br>
+	ex.&lt;p id=" "&gt; &lt;/p&gt;
+</div>
+
+<div style="text-align: center;">
+	2.<span style="color: green;">类选择器</span><br>
+	为元素们起一个组名，让他们的样式一致！
+	<img src="../images/class.png"><br><br>
+	ex.&lt;p class=" "&gt; &lt;/p&gt;
+</div>	
+<div style="text-align: center;">	
+		3.<span style="color: green;">属性选择器</span><br>
+	自行给元素们加上属性，有这个属性的元素会变的不一样！<br>
+	<img src="../images/attribute.png"><br><br>
+	ex.&lt;p " "&gt; &lt;/p&gt;
+</div>
+</div>	
+<br>
+			<!--下一节-->
+	<div class="next">
+		<div></div>
+		<a href="c3-test.html"><p>点击进入测试</p></a>
+	</div>
+	<div class="next">
+		<div></div>
+		<a href="c3-test.html"><img src="../images/jiantou.png"></a>
+	</div><br>
+	<div id="container"></div><!--评论区-->
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+	<script>
+	var gitment = new Gitment({
+  	id: '<%= page.title %>', // 可选。默认为 location.href
+  	owner: 'appappappapp4',
+  	repo: 'comment',
+  	oauth: {
+    client_id: '5532d7a4d19a8ee03435',
+    client_secret: 'af14d130da71cb8ff106194cab46616792cdc15c',
+  	},
+	})
+	gitment.render('container')
+	</script>
+	<script type="text/javascript">
+		var value=document.getElementById('input')
+		$("button").click(function()
+		{window.open("https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd="+value.value)});
+	</script>
+	<!--领取积分-->
+	<div id="score"></div>
+</body>
+</html>
