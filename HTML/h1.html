@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HTML课程</title>
+	<title>HTML课程-初识</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="h1.css"/>
-	<link rel="stylesheet" href="https://jjeejj.github.io/css/gitment.css">
-	<script src="https://jjeejj.github.io/js/gitment.js"></script>
 	<script type="text/javascript" src="h1.js"></script>
 	<script type="text/javascript" src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 	<script src="jquery.js"></script>
+	<script type="text/javascript" src="all.js"></script>
 </head>
 <body>
-		<div class="nav">   <!--导航栏-->
+		<div class="nav">   <!--帮助栏-->
 		<ul>
-			<li><a href="">我的好友</a></li>
-			<li><a href="">关注的企业</a></li>
-			<li><a href="">我的留言</a></li>
+			<li><a href="downloads.html">软件下载</a></li>
+			<li><a href="contact.html">线上咨询</a></li>
+			<li><a href="us.html">联系我们</a></li>
 		</ul>
-		</div><br><br>
-		<div class="point">
-		<div><br><br>
+		</div>
+		<br><br>
 		<div class="point"><!--内容-->
-		<div><br><br>
-		<input type="text" name="first" id="input" placeholder="关键词">
-		<button id="button" onclick="open">搜索文章</button>
+		<div>
+		<input type="text" name="first" id="input">
+		<button id="button" onclick="open">百度搜索</button>
 	<script type="text/javascript">
 		var value=document.getElementById('input')
 		$("button").click(function()
-		{window.open("https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd="+value.value)});
-	</script><br>今天去华为应聘了，我晕～～
-			<br>
-			他们出的面试题目好难啊！！😢😢<br>
-			要不是那天刚好看了一篇技术文，<br>
-			真就一点机会都没有了<br>
-			55555～～～～<br><br><br>
-			有没有哪位大佬给支支招啊～～<br>
-			小弟跪求！<br><br>
-			<img src="111.jpeg">
-			记得在下方评论区登陆GitHub账号并留下你本小节的收获领取积分哦！
+		{window.open("https://www.baidu.com/s?wd="+value.value)});
+	</script><br><br>
+			还记得我们说网页是由各种各样的标签组成的：<br>
+			你看到右边这个黑色东西了吗？<br>
+			它可以用来书写 HTML 文档。<br><br>
+			用你的键盘⌨️在&ltbody&gt &lt/body&gt里写入你的学习宣言<br>
+			然后点击右下角的<span>RUN按钮</span><br>
+			看看结果是怎样的吧！<br><br><br>
+			<br><br><br><br>
+			记得在下方评论区留言哦！
 		</div>
-		<iframe src="http://open.xiaoi.com/web/index.jsp?uid=5f63679c89e0475abe906cae98653ca2"></iframe>
+		<iframe src="https://code.sololearn.com/#html" width="500" height="570"></iframe>
 		</div>
-		<div class="next">
+			<!--下一节-->
+	<div class="next">
+		<div></div>
+		<a href="h3.html"><p>点击进入下一节</p></a>
 	</div>
 	<div class="next">
 		<div></div>
-		<a href="h2.html"><img src="../images/jiantou.png"></a>
+		<a href="h3.html"><img src="../images/jiantou.png"></a>
 	</div><br>
-	<div id="container"></div>
+	<div id="container"></div><!--评论区-->
+	<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+	<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 	<script>
 	var gitment = new Gitment({
   	id: '<%= page.title %>', // 可选。默认为 location.href
@@ -60,17 +63,12 @@
 	})
 	gitment.render('container')
 	</script>
-			<!--领取积分-->
 	<script type="text/javascript">
-	var score=0
-    $(window).scroll(function(){
-        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-        	score = score+5
-        	document.getElementById('score').innerHTML="我的积分："+score
-        }
-    });
-</script>
-
+		var value=document.getElementById('input')
+		$("button").click(function()
+		{window.open("https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=0&rsv_idx=1&tn=baidu&wd="+value.value)});
+	</script>
+	<!--领取积分-->
 	<div id="score"></div>
 </body>
 </html>
